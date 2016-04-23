@@ -5,11 +5,11 @@ import ListItem from 'material-ui/lib/lists/list-item';
 export default React.createClass ({
   render() {
     return (
-      <div>
+      <span className='fifty'>
         <List>
           <ListItem primaryText="Something happened just now!" />
         </List>
-      </div>
+      </span>
     )
   }
 })
