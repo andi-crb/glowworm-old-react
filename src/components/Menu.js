@@ -2,13 +2,27 @@ import React from 'react'
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import DropDownMenu from 'material-ui/lib/DropDownMenu';
 import RaisedButton from 'material-ui/lib/raised-button';
+import Popover from 'material-ui/lib/popover/popover';
+import TextField from 'material-ui/lib/text-field';
 import Toolbar from 'material-ui/lib/toolbar/toolbar';
 import ToolbarGroup from 'material-ui/lib/toolbar/toolbar-group';
 import ToolbarSeparator from 'material-ui/lib/toolbar/toolbar-separator';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-// injectTapEventPlugin();
+
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import Theme from '../styles/material-theme.js'
 
 export default React.createClass ({
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme: ThemeManager.getMuiTheme(Theme),
+    };
+  },
+
+
   render() {
     return (
       <div>
@@ -23,7 +37,13 @@ export default React.createClass ({
             </DropDownMenu>
           </ToolbarGroup>
           <ToolbarGroup float="right">
-            <RaisedButton label="Login" secondary={true} />
+          <RaisedButton label="Login" secondary={true} />
+            <Popover>
+
+              <TextField hintText="username" />
+              <TextField hintText="password" />
+              <RaisedButton label="Login" secondary={true} />
+            </Popover>
           </ToolbarGroup>
         </Toolbar>
       </div>

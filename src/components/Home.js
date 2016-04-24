@@ -1,17 +1,11 @@
 import React from 'react';
-import Header from './Header'
-import Menu from './Menu'
-import Feed from './Feed'
+import Feed from './secondlevel/Feed'
 import Stories from './Stories'
-import AddReview from './AddReview'
 
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import Theme from '../styles/material-theme.js'
-import injectTapEventPlugin from 'react-tap-event-plugin'
 
-injectTapEventPlugin();
-
-class AppComponent extends React.Component {
+class Home extends React.Component {
   constructor() {
       super();
   }
@@ -30,18 +24,15 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        <Menu />
-        <Header />
         <Feed />
         <Stories />
-        <AddReview />
       </div>
     );
   }
 }
 
-AppComponent.defaultProps = {
+Home.defaultProps = {
 };
 
 
-export default AppComponent;
+export default Home;

@@ -3,8 +3,6 @@ import React from 'react'
 import DatePicker from 'material-ui/lib/date-picker/date-picker';
 import RaisedButton from 'material-ui/lib/raised-button';
 import TextField from 'material-ui/lib/text-field';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
 
 // injectTapEventPlugin();
 

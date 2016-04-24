@@ -8,6 +8,9 @@ export default React.createClass ({
       <span className='fifty'>
         <List>
           <ListItem primaryText="Something happened just now!" />
+          <ListItem primaryText="Something happened just now!" />
+          <ListItem primaryText="Something happened just now!" />
+          <ListItem primaryText="Something happened just now!" />
         </List>
       </span>
     )
