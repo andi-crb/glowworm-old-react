@@ -6,7 +6,7 @@ import Recommendations from './components/Recommendations'
 import Reviews from './components/Reviews'
 import Signup from './components/Signup'
 import Stories from './components/Stories'
-import Story from './components/story'
+import Story from './components/Story'
 
 
 module.exports = (

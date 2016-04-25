@@ -7,7 +7,7 @@ export default React.createClass ({
     return (
       <span className='fifty'>
         <List>
-          <ListItem primaryText="You sent a rec!" />
+          <ListItem primaryText="You got a rec!" />
         </List>
       </span>
     )
