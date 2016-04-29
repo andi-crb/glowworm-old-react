@@ -9,31 +9,34 @@ import TableBody from 'material-ui/lib/table/table-body';
 export default React.createClass ({
   render() {
     return (
-      <span className='fifty'>
+      <span className='table'>
       <Table>
           <TableHeader>
             <TableRow>
               <TableHeaderColumn>Title</TableHeaderColumn>
               <TableHeaderColumn>Author</TableHeaderColumn>
-              <TableHeaderColumn>Publication</TableHeaderColumn>
-              <TableHeaderColumn>Date Published</TableHeaderColumn>
-              <TableHeaderColumn>Average Rating</TableHeaderColumn>
+              <TableHeaderColumn>Reviewer</TableHeaderColumn>
+              <TableHeaderColumn>Review</TableHeaderColumn>
+              <TableHeaderColumn>Rating</TableHeaderColumn>
+              <TableHeaderColumn>Review Date</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody>
             <TableRow>
               <TableRowColumn>Gravity Well</TableRowColumn>
               <TableRowColumn>AJ Fitzwater</TableRowColumn>
-              <TableRowColumn>SciGentasy</TableRowColumn>
-              <TableRowColumn>2015</TableRowColumn>
+              <TableRowColumn>Andi</TableRowColumn>
+              <TableRowColumn>Really creative use of language.</TableRowColumn>
               <TableRowColumn>5</TableRowColumn>
+              <TableRowColumn>29/04/2016</TableRowColumn>
             </TableRow>
             <TableRow>
               <TableRowColumn>Bone Length, Wavelength</TableRowColumn>
               <TableRowColumn>Octavia Cade</TableRowColumn>
-              <TableRowColumn>Capricious</TableRowColumn>
-              <TableRowColumn>2015</TableRowColumn>
+              <TableRowColumn>Andi</TableRowColumn>
+              <TableRowColumn>This was beautifully written</TableRowColumn>
               <TableRowColumn>5</TableRowColumn>
+              <TableRowColumn>29/04/2016</TableRowColumn>
             </TableRow>
           </TableBody>
         </Table>
